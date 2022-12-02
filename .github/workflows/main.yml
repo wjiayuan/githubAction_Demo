@@ -13,5 +13,6 @@ jobs:
     - uses: actions/setup-node@v3
     - run: |
         node ./demo.js
+        echo ${{ secrets.corpid }}
   
   
