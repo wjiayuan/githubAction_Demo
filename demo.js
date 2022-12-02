@@ -39,7 +39,7 @@ async function taobaoMonitor() {
       url: 'https://qyapi.weixin.qq.com/cgi-bin/gettoken',
       params: {
         corpid: corpid,
-        corpsecret: corpecret
+        corpsecret: corpsecret
       }
     })
     access_token = access_token.data.access_token
