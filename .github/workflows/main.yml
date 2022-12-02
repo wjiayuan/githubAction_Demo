@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v3
     - run: |
-        npm install axios@1.1.0
+        npm install axios
         node ./demo.js
       env:
         CORPID: ${{ secrets.CORPID }}
