@@ -13,6 +13,9 @@ jobs:
     - uses: actions/setup-node@v3
     - run: |
         node ./demo.js
-        echo ${{ secrets.corpid }}
+      env:
+        CORPID: ${{ secrets.CORPID }}
+        CORPSECRET: ${{ secrets.CORPSECRET }}
+      
   
   
