@@ -14,7 +14,7 @@ async function taobaoMonitor() {
     },
     headers: {
       accept: '*/*',
-      'accept-encoding': 'gzip, deflate, br',
+      'accept-encoding': '*',
       'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
       cookie:
         't=e5f06ad7073165209e35cdf6ac073b4b; xlly_s=1; thw=cn; sgcookie=E100ZlbY2dPM1jtjoo1NcXlNVpKnWNh3Ch5ZX/gfyHKxEqnBVED3ox85+J77KtAhtJyExp2cZpG7QlcCIBa7tRuQp7lHUTMIjdH+beEd+KIkQjk=; ubn=p; ucn=center; cookie2=60687fd3e2d13275d6e6ea0288e5507d; _tb_token_=7ba885e53b5a6; _m_h5_tk=7a8bc8a9479f470c043ee78c797a01ec_1669116616951; _m_h5_tk_enc=19d41dac175f5a9bb6b0327e3b3a1ac0; _samesite_flag_=true; mt=ci=0_0; tracknick=; uc1=cookie14=UoeyBzDMjmfPEw==; cna=iLTwG2kDEUQCARsqjB8FuMcv; isg=BBgYsl6dz4cTTOMDKgJhMEYy6UaqAXyL0FAVPFIJM9MG7bjX-hEIGy6MJSVdfTRj; l=eBrxhGcPTcax1b7JBOfwourza77tYIRAguPzaNbMiOCP_0565dCAW6zpcTLBCnGVh6rwR3z0a8PJBeYBq_C-nxvte5DDwsHmn; tfstk=caFOB9fcSMjGv8smTfBnu-Al6IVAZd6K0NivM7p2RtwfrlRAi4Puwp3BCquAjwC..',
