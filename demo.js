@@ -31,7 +31,7 @@ async function taobaoMonitor() {
       'content-type': 'multipart/form-data; boundary=---011000010111000001101001'
     }
   })
-  consloe.log(JSON.parse(res.data.slice(22, -2)))
+  console.loc(JSON.parse(res.data.slice(22, -2)))
   let sku = JSON.parse(res.data.slice(22, -2)).data.dynStock.sku
   // ;31560:123907191; 浅度烘焙 ;31560:29164057; 中度烘焙 ;31560:24600297; 深度烘焙 ;31560:12025290277; 挂耳/冷萃咖啡
   if (';31560:123907191;' in sku || ';31560:29164057;' in sku || ';31560:24600297;' in sku || ";31560:12025290277;" in sku) {
