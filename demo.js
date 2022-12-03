@@ -2,7 +2,6 @@ let axios = require('axios')
 let corpid = process.env.CORPID
 let corpsecret = process.env.CORPSECRET
 async function taobaoMonitor() {
-  let res = await axios.request(async function taobaoMonitor() {
   let res = await axios.request({
     method: 'GET',
     url: 'https://detailskip.taobao.com/service/getData/1/p1/item/detail/sib.htm',
