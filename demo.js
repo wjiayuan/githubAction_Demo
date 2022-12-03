@@ -31,15 +31,15 @@ async function taobaoMonitor() {
   let sku = JSON.parse(res.data.slice(22, -2)).data.dynStock.sku
   // ;31560:123907191; 浅度烘焙 ;31560:29164057; 中度烘焙 ;31560:24600297; 深度烘焙 ;31560:12025290277; 挂耳/冷萃咖啡
   if (';31560:123907191;' in sku || ';31560:29164057;' in sku || ';31560:24600297;' in sku || ";31560:12025290277;" in sku) {
-//     let access_token = await axios.request({
-//       method: 'GET',
-//       url: 'https://qyapi.weixin.qq.com/cgi-bin/gettoken',
-//       params: {
-//         corpid: corpid,
-//         corpsecret: corpsecret
-//       }
-//     })
-//     access_token = access_token.data.access_token
+    let access_token = await axios.request({
+      method: 'GET',
+      url: 'https://qyapi.weixin.qq.com/cgi-bin/gettoken',
+      params: {
+        corpid: corpid,
+        corpsecret: corpsecret
+      }
+    })
+    access_token = access_token.data.access_token
     access_token = 'azrwbpr4-QAyEZLY80MkFu7zp7-joOF9C93fo4WAxWZCCibekZ673bue1wJ9VEZMdWMLeiqYDPIXSh-9BpFtco0YLOHTfjyvmUSNMsq9CgHRlIdLh3amzMrkaGb1RYtjKDgVOH3WeiCbnr6EOLgA3KyklMd_ARk7Uts2t1_lKWf1gQpCYbaTHJbDwRlfNp3TU90fsFox7dJug4cot7QRgA'
     let res = await axios.request({
       method: 'POST',
