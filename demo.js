@@ -70,5 +70,3 @@ async function taobaoMonitor() {
 // setInterval(taobaoMonitor, 1800000)
 taobaoMonitor()
 console.log('商品监控中...')
-
-
