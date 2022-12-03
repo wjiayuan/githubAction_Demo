@@ -1,8 +1,6 @@
 let axios = require('axios')
 let corpid = process.env.CORPID
 let corpsecret = process.env.CORPSECRET
-let corpid = process.env.CORPID
-let corpsecret = process.env.CORPSECRET
 async function taobaoMonitor() {
   let res = await axios.request({
     method: 'GET',
