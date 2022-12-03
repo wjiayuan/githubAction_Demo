@@ -15,7 +15,7 @@ async function taobaoMonitor() {
   },
   headers: {
     accept: '*/*',
-    'accept-encoding': 'gzip, deflate, br',
+    'accept-encoding': '*',
     'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
     cookie: 'thw=cn; sgcookie=E100ZlbY2dPM1jtjoo1NcXlNVpKnWNh3Ch5ZX/gfyHKxEqnBVED3ox85+J77KtAhtJyExp2cZpG7QlcCIBa7tRuQp7lHUTMIjdH+beEd+KIkQjk=; ubn=p; ucn=center; tracknick=; cna=iLTwG2kDEUQCARsqjB8FuMcv; miid=10605451340835758; _m_h5_tk=21a6ee0c4340619de6b679a2b8bac21f_1670036373788; _m_h5_tk_enc=c039502e71715df162412e045c606803; xlly_s=1; cookie2=17764b838fb09f5329ab917aacfb2bb9; t=8dd8cfc6f5845b074c5217ea516ff177; _tb_token_=e653e5775883b; mt=ci=-1_1; isg=BKCgGV-T12kd3Gub4lppWA7qca5yqYRzKLidJRqx3btOFUA_wrk6A1dkrb2VpTxL; tfstk=cQFfBVjaFnxbd45Mim_Pb2m5vDcCayAjzKiYliMERek5PQZE2s4kTDNheAxo_V35.; l=fBrxhGcPTcax1qy_BO5Courza779wIRb4sPzaNbMiIEGa6tf6F1uJNCF_SipJdtjgTCDCetzo7yzVdLHR3fRwxDDBYFinQUS3xv9QaVb5',
     referer: 'https://item.taobao.com/item.htm?id=576542211043&price=20&sourceType=item&sourceType=item&suid=55fbf919-ebc6-49d7-8e07-e5ba89a513ce&shareUniqueId=18908604460&ut_sk=1.YRNedrAqL0wDAAVWAu/7b9Sn_21646297_1669107974225.Copy.1&un=7d79524c2f3b08b228b5e1fb31f54c83&share_crt_v=1&un_site=0&spm=a2159r.13376460.0.0&sp_abtk=gray_1_code_simpleAndroid2&tbSocialPopKey=shareItem&sp_tk=eXRWT2RYbndoQU8=&cpp=1&shareurl=true&short_name=h.US8iN8z&bxsign=scdvBRZ6P9kRWizmmg9u-2867A2z8BsaQcinzk2DJ5opNOXb1aDY6YjV9A5q9RsEGnpBL8fIF7nyCsuTcQpYyLAJ6Lzirvoyri7MoS4bf45c7iSRihR233bAcmrWUgx07_F&tk=ytVOdXnwhAO CZ3457&app=chrome',
