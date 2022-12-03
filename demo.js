@@ -17,7 +17,7 @@ async function taobaoMonitor() {
       "accept": "*/*",
       "accept-encoding": "*",
       "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
-      "cookie": "thw=cn; sgcookie=E100ZlbY2dPM1jtjoo1NcXlNVpKnWNh3Ch5ZX%2FgfyHKxEqnBVED3ox85%2BJ77KtAhtJyExp2cZpG7QlcCIBa7tRuQp7lHUTMIjdH%2BbeEd%2BKIkQjk%3D; ubn=p; ucn=center; tracknick=; cna=iLTwG2kDEUQCARsqjB8FuMcv; miid=10605451340835758; _m_h5_tk=21a6ee0c4340619de6b679a2b8bac21f_1670036373788; _m_h5_tk_enc=c039502e71715df162412e045c606803; xlly_s=1; cookie2=17764b838fb09f5329ab917aacfb2bb9; t=8dd8cfc6f5845b074c5217ea516ff177; _tb_token_=e653e5775883b; mt=ci%3D-1_1; x5sec=7b22617365727665723b32223a223438656564363662333361313836393263656665306239636436646265326265434e573171707747454b622f33626258744d6d5338414561444449324f5459334e444d304d7a41374d7a43436c346e462b762f2f2f2f384251414d3d227d; isg=BCsr_PwDzPgynxBapSOCaUGDuk8VQD_Ct2FGJJ2o6mrBPE-eJBCfEg_dlnxSHJe6; tfstk=c9vNBbMxUAHZhUKxy9X2UWLbJofOaApkHvSPsq0e31LxN01Fzs2bkM28YH-4YrfG.; l=fBrxhGcPTcax1O05BO5Zhurza77O1IRfGsPzaNbMiIEGa15dtF6M-NCF_x6ySdtjgTC0weKzo7yzVdInS34dNxDDBeV_SJ2snxvtaQtJe",
+      "cookie": "thw=cn; sgcookie=E100ZlbY2dPM1jtjoo1NcXlNVpKnWNh3Ch5ZX%2FgfyHKxEqnBVED3ox85%2BJ77KtAhtJyExp2cZpG7QlcCIBa7tRuQp7lHUTMIjdH%2BbeEd%2BKIkQjk%3D; ubn=p; ucn=center; tracknick=; cna=iLTwG2kDEUQCARsqjB8FuMcv; miid=10605451340835758; _m_h5_tk=21a6ee0c4340619de6b679a2b8bac21f_1670036373788; _m_h5_tk_enc=c039502e71715df162412e045c606803; xlly_s=1; cookie2=17764b838fb09f5329ab917aacfb2bb9; t=8dd8cfc6f5845b074c5217ea516ff177; _tb_token_=e653e5775883b; mt=ci%3D-1_1; isg=BKCgGV-T12kd3Gub4lppWA7qca5yqYRzKLidJRqx3btOFUA_wrk6A1dkrb2VpTxL; tfstk=cQFfBVjaFnxbd45Mim_Pb2m5vDcCayAjzKiYliMERek5PQZE2s4kTDNheAxo_V35.; l=fBrxhGcPTcax1qy_BO5Courza779wIRb4sPzaNbMiIEGa6tf6F1uJNCF_SipJdtjgTCDCetzo7yzVdLHR3fRwxDDBYFinQUS3xv9QaVb5",
       "referer": "https://item.taobao.com/item.htm?id=576542211043&price=20&sourceType=item&sourceType=item&suid=55fbf919-ebc6-49d7-8e07-e5ba89a513ce&shareUniqueId=18908604460&ut_sk=1.YRNedrAqL0wDAAVWAu%2F7b9Sn_21646297_1669107974225.Copy.1&un=7d79524c2f3b08b228b5e1fb31f54c83&share_crt_v=1&un_site=0&spm=a2159r.13376460.0.0&sp_abtk=gray_1_code_simpleAndroid2&tbSocialPopKey=shareItem&sp_tk=eXRWT2RYbndoQU8%3D&cpp=1&shareurl=true&short_name=h.US8iN8z&bxsign=scdvBRZ6P9kRWizmmg9u-2867A2z8BsaQcinzk2DJ5opNOXb1aDY6YjV9A5q9RsEGnpBL8fIF7nyCsuTcQpYyLAJ6Lzirvoyri7MoS4bf45c7iSRihR233bAcmrWUgx07_F&tk=ytVOdXnwhAO%20CZ3457&app=chrome",
       "sec-ch-ua": "\"Microsoft Edge\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
       "sec-ch-ua-mobile": "?0",
@@ -66,4 +66,3 @@ async function taobaoMonitor() {
 // setInterval(taobaoMonitor, 1800000)
 taobaoMonitor()
 console.log('商品监控中...')
-
