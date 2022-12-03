@@ -1,6 +1,8 @@
 let axios = require('axios')
 let corpid = process.env.CORPID
 let corpsecret = process.env.CORPSECRET
+let corpid = process.env.CORPID
+let corpsecret = process.env.CORPSECRET
 async function taobaoMonitor() {
   let res = await axios.request({
     method: 'GET',
@@ -14,34 +16,38 @@ async function taobaoMonitor() {
       ref: ''
     },
     headers: {
-      "accept": "*/*",
-      "accept-encoding": "*",
-      "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
-      "cookie": "thw=cn; sgcookie=E100ZlbY2dPM1jtjoo1NcXlNVpKnWNh3Ch5ZX%2FgfyHKxEqnBVED3ox85%2BJ77KtAhtJyExp2cZpG7QlcCIBa7tRuQp7lHUTMIjdH%2BbeEd%2BKIkQjk%3D; ubn=p; ucn=center; tracknick=; cna=iLTwG2kDEUQCARsqjB8FuMcv; miid=10605451340835758; _m_h5_tk=21a6ee0c4340619de6b679a2b8bac21f_1670036373788; _m_h5_tk_enc=c039502e71715df162412e045c606803; xlly_s=1; cookie2=17764b838fb09f5329ab917aacfb2bb9; t=8dd8cfc6f5845b074c5217ea516ff177; _tb_token_=e653e5775883b; mt=ci%3D-1_1; isg=BKCgGV-T12kd3Gub4lppWA7qca5yqYRzKLidJRqx3btOFUA_wrk6A1dkrb2VpTxL; tfstk=cQFfBVjaFnxbd45Mim_Pb2m5vDcCayAjzKiYliMERek5PQZE2s4kTDNheAxo_V35.; l=fBrxhGcPTcax1qy_BO5Courza779wIRb4sPzaNbMiIEGa6tf6F1uJNCF_SipJdtjgTCDCetzo7yzVdLHR3fRwxDDBYFinQUS3xv9QaVb5",
-      "referer": "https://item.taobao.com/item.htm?id=576542211043&price=20&sourceType=item&sourceType=item&suid=55fbf919-ebc6-49d7-8e07-e5ba89a513ce&shareUniqueId=18908604460&ut_sk=1.YRNedrAqL0wDAAVWAu%2F7b9Sn_21646297_1669107974225.Copy.1&un=7d79524c2f3b08b228b5e1fb31f54c83&share_crt_v=1&un_site=0&spm=a2159r.13376460.0.0&sp_abtk=gray_1_code_simpleAndroid2&tbSocialPopKey=shareItem&sp_tk=eXRWT2RYbndoQU8%3D&cpp=1&shareurl=true&short_name=h.US8iN8z&bxsign=scdvBRZ6P9kRWizmmg9u-2867A2z8BsaQcinzk2DJ5opNOXb1aDY6YjV9A5q9RsEGnpBL8fIF7nyCsuTcQpYyLAJ6Lzirvoyri7MoS4bf45c7iSRihR233bAcmrWUgx07_F&tk=ytVOdXnwhAO%20CZ3457&app=chrome",
-      "sec-ch-ua": "\"Microsoft Edge\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"",
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": "\"Windows\"",
-      "sec-fetch-dest": "script",
-      "sec-fetch-mode": "no-cors",
-      "sec-fetch-site": "same-site",
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.62"
+      accept: '*/*',
+      'accept-encoding': '*',
+      'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+      cookie: '_m_h5_tk=8f65d48eba793596562f7d3bf126b6da_1670061426321; _m_h5_tk_enc=84438e298a6637d76130a83e5864cb31; t=79d5099586a1acb61067b4f048ea5702; thw=cn; sgcookie=E100wyQdQ0hFTq0kR2G4qnkcM6WtnRqHEBPioPX4pMLyRFgIxNHZ7sk1iqhhzwlPTdAoV+skL3UWZo7OwUEndsireGp0/j0/zjHejpud6J7t7T0=; uc3=lg2=VT5L2FSpMGV7TQ==&id2=UU6oL/oA8+B++Q==&nk2=DkLz0cc27w==&vt3=F8dCvjcL6ToIWhwOc1U=; lgc=mr_svip; uc4=nk4=0@DCdCar6lUxGE/A512Udsrcjk&id4=0@U2xloerkAUpcNTK0wbk+z4grFRm1; tracknick=mr_svip; _cc_=VT5L2FSpdA==; ubn=p; ucn=center; mt=ci=6_1; x5sec=7b22617365727665723b32223a226164636437653863343732333638656566393635383162393736626462663533434a6956724a7747454957737676434139596a6a6b414561444449324f5459334e444d304d7a41374e6a43436c346e462b762f2f2f2f384251414d3d227d; isg=BI6OUBkzYXKe_NWhwLxfcoxk32RQD1IJauZDv7jXiRF8Gy51IJ9PGXOaU0d3A0oh; l=fBrxhGcPTcax1LrpBOfZourza779DIRAguPzaNbMi9fP_vC6P_wdW65GGq8BCnGVFsppR3z0a8rWBeYBq_C-nxvte5DDwgDmne_7Qn5..; tfstk=cG3FBdYJueLegVlJHP4ruOKUBeVdZT0myFP4xLvTSuBdNjqhiwB8sZCZ_bWtBkf..',
+      referer: 'https://item.taobao.com/item.htm?id=576542211043&price=20&sourceType=item&sourceType=item&suid=95f9adde-8aa7-445e-b404-53a1150affdc&shareUniqueId=19065126906&ut_sk=1.YRNedrAqL0wDAAVWAu/7b9Sn_21646297_1670053654312.Copy.1&un=7d79524c2f3b08b228b5e1fb31f54c83&share_crt_v=1&un_site=0&spm=a2159r.13376460.0.0&sp_abtk=gray_1_code_simpleAndroid2&tbSocialPopKey=shareItem&sp_tk=dGVRRmRkTnhQT24=&cpp=1&shareurl=true&short_name=h.URPa3co&bxsign=scdmpPbsyVlN5L2T3oxArdE9_EzH8f__ixweMpAcfiLUwkrFAjNKbXp7Q_35VLHL0n0vs5DEsVqN7TEPPs9LUp1YODgQh3rjzsFRIDYs_L2tE7xBg9934YgsokPAjKhUiqh&tk=teQFddNxPOn CZ3457&app=chrome',
+      'sec-ch-ua': '"Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
+      'sec-ch-ua-mobile': '?0',
+      'sec-ch-ua-platform': '"Windows"',
+      'sec-fetch-dest': 'script',
+      'sec-fetch-mode': 'no-cors',
+      'sec-fetch-site': 'same-site',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.62',
+      'content-type': 'multipart/form-data; boundary=---011000010111000001101001'
     },
     data: '-----011000010111000001101001--\r\n\r\n'
   })
+
   let sku = JSON.parse(res.data.slice(11, -2)).data.dynStock.sku
+  console.log(sku);
   // ;31560:123907191; 浅度烘焙 ;31560:29164057; 中度烘焙 ;31560:24600297; 深度烘焙 ;31560:12025290277; 挂耳/冷萃咖啡
   if (';31560:123907191;' in sku || ';31560:29164057;' in sku || ';31560:24600297;' in sku || ";31560:12025290277;" in sku) {
-    let access_token = await axios.request({
-      method: 'GET',
-      url: 'https://qyapi.weixin.qq.com/cgi-bin/gettoken',
-      params: {
-        corpid: corpid,
-        corpsecret: corpsecret
-      }
-    })
-    access_token = access_token.data.access_token
-//     access_token = "hYONAC6Pghkbsqrkzx65yIbZxJ_Th8Nki4m0TaHLqRZvjfC3xPDF0qh3E6qZ3IgCRjOguCHqexuYgMV52jt-4rS9cI4jg8VKEpEnkm-GcuLRIoEPcveMedVcrdUw33lKvCr74lMqc3AEqjJBdYG9WDrpTl77i0p6GoneNaa_hMxcs-El-Fe_vS7Oeiv3ikIgG4am8Z0AEWNhHF8FOIhZwQ"
+    // let access_token = await axios.request({
+    //   method: 'GET',
+    //   url: 'https://qyapi.weixin.qq.com/cgi-bin/gettoken',
+    //   params: {
+    //     corpid: 'ww7fba3c8527f07dd8',
+    //     corpsecret: '8auv76lKGpLC1OfUQtH2h5zW85g3ZSmuXBJyWYhNd5Y'
+    //   }
+    // })
+    // access_token = access_token.data.access_token
+    
+    access_token = 'FebWk3xRDsp5VtyQaGiBjwfioynMuZI61Lb6V_ihBV0GCGGvIgE99O_Hr9rUvWZUVXUyYmhgiXniRlo5BWW-tnMlrdI9vqMZxpiT2uu_vTIsvVVlVQLMAs0juBF0QZrUNcSsSo602ohMAgCJIGUqaM7Nb2RVj9VLQ4zjFe0z-NW4epftg9ct1NhwdVgEnUW6Tse9diyHfOSv0pCbW6L-3w'
     let res = await axios.request({
       method: 'POST',
       url: 'https://qyapi.weixin.qq.com/cgi-bin/message/send',
@@ -66,4 +72,5 @@ async function taobaoMonitor() {
 // setInterval(taobaoMonitor, 1800000)
 taobaoMonitor()
 console.log('商品监控中...')
+
 
